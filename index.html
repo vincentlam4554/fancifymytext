@@ -1,37 +1,33 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Fancify Shamcify</title>
-    <script src="fancifymytext.js"></script>
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encrypt-It!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-  <body>
-    <h1>Fancify my Text</h1>
+<body>
+    <h1>Encrypt-It!</h1>
 
-    <fieldset style="width: 300px;">
-      <legend>Text</legend>
-      <textarea id="textInput" rows="4" cols="30"></textarea>
-    </fieldset>
+    <section>
+        <label for="input-text">Enter text to encrypt:</label>
+        <br>
+        <textarea id="input-text" rows="8" cols="50"></textarea>
+    </section>
 
     <br>
 
-    <fieldset style="width: 300px;">
-      <legend>Fancify</legend>
+    <section>
+        <button id="encrypt-btn">Encrypt-It!</button>
+        <button id="reset-btn">Reset</button>
+    </section>
 
-      <button onclick="makeBigger()">Bigger!</button>
-      <br><br>
+    <br>
 
-      <input type="radio" id="fancy" name="style" onchange="changeStyle()">
-      <label for="fancy">FancyShmancy</label>
+    <h2>Encrypted Output:</h2>
+    <p id="output"></p>
 
-      <br>
-
-      <input type="radio" id="boring" name="style" onchange="changeStyle()">
-      <label for="boring">BoringBetty</label>
-
-      <br><br>
-
-      <button onclick="mooText()">Moo</button>
-    </fieldset>
-  </body>
+    <!-- Link JS -->
+    <script src="encrypt-it.js"></script>
+</body>
 </html>
